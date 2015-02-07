@@ -1,12 +1,22 @@
 Source: libosmocore
 Section: libs
 Priority: optional
-Maintainer: Harald Welte <laforge@gnumonks.org>
-Build-Depends: debhelper (>= 8.0.0), autotools-dev, autoconf, automake, libtool, dh-autoreconf, libdpkg-perl, git, doxygen
-Standards-Version: 3.9.3
+Maintainer: Ruben Undheim <ruben.undheim@gmail.com>
+Build-Depends: debhelper (>= 9),
+               autotools-dev,
+               autoconf,
+               automake,
+               libtool,
+               dh-autoreconf,
+               libdpkg-perl,
+               git,
+               doxygen,
+               libpcsclite-dev,
+               pkg-config
+Standards-Version: 3.9.6
+Vcs-Browser: https://github.com/rubund/libosmocore/tree/debian-packaging
+Vcs-Git: git://github.com/rubund/libosmocore.git -b debian-packaging
 Homepage: http://bb.osmocom.org/trac/wiki/libosmocore
-Vcs-Git: git://git.osmocom.org/libosmocore.git
-Vcs-Browser: http://git.osmocom.org/gitweb?p=libosmocore.git;a=summary
 
 Package: libosmocore
 Section: libs
