@@ -20,8 +20,13 @@ Homepage: http://bb.osmocom.org/trac/wiki/libosmocore
 
 Package: libosmocore
 Architecture: any
-Depends: libosmocodec0, libosmocore6, libosmogb3, libosmogsm5, libosmovty1, ${misc:Depends}
-Pre-Depends: ${misc:Pre-Depends}
+Multi-Arch: same
+Depends: libosmocodec0 (= ${binary:Version}),
+         libosmocore6 (= ${binary:Version}),
+         libosmogb3 (= ${binary:Version}),
+         libosmogsm5 (= ${binary:Version}),
+         libosmovty1 (= ${binary:Version}),
+         ${misc:Depends}
 Description: Open Source MObile COMmunications CORE library
 
 Package: libosmocodec0
