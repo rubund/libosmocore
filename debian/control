@@ -22,48 +22,56 @@ Package: libosmocore
 Section: libs
 Architecture: any
 Depends: libosmocodec0, libosmocore6, libosmogb3, libosmogsm5, libosmovty1, ${misc:Depends}
+Pre-Depends: ${misc:Pre-Depends}
 Description: Open Source MObile COMmunications CORE library
 
 Package: libosmocodec0
 Section: libs
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
+Pre-Depends: ${misc:Pre-Depends}
 Description: Osmo codec library
 
 Package: libosmocore6
 Section: libs
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
+Pre-Depends: ${misc:Pre-Depends}
 Description: Osmo Core library
 
 Package: libosmogb3
 Section: libs
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
+Pre-Depends: ${misc:Pre-Depends}
 Description: Osmo GPRS GB library
 
 Package: libosmogsm5
 Section: libs
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
+Pre-Depends: ${misc:Pre-Depends}
 Description: Osmo GSM utility library
 
 Package: libosmovty1
 Section: libs
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
+Pre-Depends: ${misc:Pre-Depends}
 Description: Osmo VTY library
 
 Package: libosmoctrl0
 Section: libs
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
+Pre-Depends: ${misc:Pre-Depends}
 Description: Osmo control library
 
 Package: libosmosim0
 Section: libs
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
+Pre-Depends: ${misc:Pre-Depends}
 Description: Osmo SIM library
 
 Package: libosmocore-dev
